@@ -11,7 +11,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@iconify-json/ic": "^1.1.13",
+    "@unoCSS/preset-icons": "npm:@unocss/preset-icons@^0.49.7",
     "@vitejs/plugin-vue-jsx": "^3.0.0",
+    "unocss": "^0.49.7",
     "vite": "^4.1.2"
   },
   "dependencies": {
