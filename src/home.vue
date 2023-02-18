@@ -10,6 +10,10 @@
 import  XButton from './button'
 import  SFCButton from './SFCButton.vue' 
 import JSXButton from './JSXButton'
+console.log("🚀 ~ file: home.vue:11 ~ XButton", XButton.name)
+console.log("🚀 ~ file: home.vue:11 ~ XButton", SFCButton.name)
+console.log("🚀 ~ file: home.vue:11 ~ XButton", JSXButton.name)
+
 </script>
     
 <style>
