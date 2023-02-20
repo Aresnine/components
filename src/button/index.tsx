@@ -1,16 +1,6 @@
 import { defineComponent, PropType, toRefs } from "vue"
 // 定义类型
-export type IColor =
-  | "black"
-  | "gray"
-  | "red"
-  | "yellow"
-  | "green"
-  | "blue"
-  | "indigo"
-  | "purple"
-  | "pink"
-  | "orange"
+export type IColor = "black" | "gray" | "red" | "yellow" | "green" | "blue" | "indigo" | "purple" | "pink" | "orange"
 // 约束组件
 export const props = {
   color: {
@@ -36,8 +26,7 @@ export default defineComponent({
       hover:bg-${props.color}-700 
       border-none 
       cursor-pointer 
-      `}
-      >
+      `}>
         {slots.default ? slots.default() : "默认按钮"}
       </button>
     )

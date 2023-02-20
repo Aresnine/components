@@ -13,3 +13,4 @@ dist
 demo
 pnpm-lock.yaml
 node_modules/
+cache

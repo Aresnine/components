@@ -15,6 +15,10 @@ const colors = [
   "orange",
 ]
 
+const icons = [
+  
+]
+
 const safelist = [
   ...colors.map((v) => `bg-${v}-500`),
   ...colors.map((v) => `hover:bg-${v}-700`),

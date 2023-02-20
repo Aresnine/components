@@ -14,6 +14,9 @@
     <h2>css原子化-图标</h2>
     <button class="text-40px leading-40px flex items-center"><i class="i-ion-accessibility inline-block "></i>按钮</button>
     <i class="i-ion-balloon-outline text-blue text-60px inline-block"></i>
+    <hr>
+    <div style="border: 1px solid red;"  class="w-500px h-150px rounded-full text-30px text-yellow-300 bg-#f1f2f6 hover:text-yellow-900 flex items-center justify-center"> 
+    <i class="i-ion-battery-charging-sharp inline-block"></i> Study Group</div>
 </template>
     
 <script setup lang='ts'>
