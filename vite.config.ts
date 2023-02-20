@@ -9,6 +9,7 @@ export default defineConfig({
   plugins: [vue(), vueJsx(), Unocss()],
   build: {
     rollupOptions: {
+      // 讲模块保留在bundle之外
       external: ["vue", "vue-router"],
       output: {
         globals: {
@@ -16,13 +17,23 @@ export default defineConfig({
         },
       },
     },
-    minify: false,
+   
+    minify: 'terser',
+    terserOptions: {
+      compress: {
+        //生产环境时移除console
+        drop_console: true,
+        drop_debugger: true,
+      },
+    },
+    sourcemap: true, 
+    cssCodeSplit: true,
     lib: {
       entry: "./src/entry.ts",
       name: "xxooUI",
       fileName: "xxoo-ui",
       // 导出模块格式
-      formats: ["es", "umd", "iife"],
+      formats: ["es", "umd",'cjs', "iife"],
     },
   },
 })
